@@ -12,3 +12,6 @@ all:
 
 run: all
 	qemu-system-aarch64 -M raspi3b -kernel kernel8.img -display none -d in_asm
+
+clean:
+	rm kernel8.elf *.o kernel8.img
