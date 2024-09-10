@@ -1,11 +1,7 @@
-#include "include/mini_uart.h"
-
+#include "include/term.h"
 int main()
 {
-    mini_uart_init();
-    mini_uart_puts("Hello World!\n");
-    while (1) {
-        mini_uart_send(mini_uart_getc());
-    }
+    term_init();
+    term_run();
     return 0;
 }
