@@ -1,4 +1,5 @@
 kernel8.img
+.vscode/*
 
 # Prerequisites
 *.d
